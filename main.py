@@ -1,2 +1,12 @@
 import os
-os.system('python ./core/manage.py runserver')
+import sys
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
+
+os.system('{} & python {} runserver'.format(resource_path('venv/Scripts/activate'), resource_path('./core/manage.py')))
+
