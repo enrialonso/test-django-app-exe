@@ -1,0 +1,1 @@
+pyinstaller -y -F --add-data "C:/Users/IEUser/PycharmProjects/test-django-app-exe/core";"core/" --add-data "C:/Users/IEUser/PycharmProjects/test-django-app-exe/venv";"venv/"  "C:/Users/IEUser/PycharmProjects/test-django-app-exe/app.py"
