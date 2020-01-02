@@ -14,3 +14,5 @@ pyinstaller -y -F --add-data "<PATH_TO_FOLDER>/test-django-app-exe/core";"core/"
 Is necesary include core Django project and virtual environment for correct operation of the app. feel free to report issues!
 
 To share the app need copy the app.exe and db folder to another location an you are ready to share with anyone you want.
+
+If you want test the app, have an exe app to test and play with then, when you reload the index web add a random string to the database to check the app.
